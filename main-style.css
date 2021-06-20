@@ -48,6 +48,7 @@ body {
 @media (min-width: 1440px) {
   .wrapper .item .item-link {
     border: 2px solid #f2f2f2;
+    height: 34%;
   }
 }
 @media (min-width: 1440px) {
