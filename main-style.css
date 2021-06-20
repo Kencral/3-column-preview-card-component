@@ -1,6 +1,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #000;
 }
 .attribution a {
   color: #3e52a3;
@@ -8,7 +9,6 @@
 @media (min-width: 1440px) {
   .attribution {
     width: 100vw;
-    align-self: flex-end;
   }
 }
 
@@ -46,6 +46,11 @@ body {
   vertical-align: middle;
 }
 @media (min-width: 1440px) {
+  .wrapper .item .item-link {
+    border: 2px solid #f2f2f2;
+  }
+}
+@media (min-width: 1440px) {
   .wrapper .item {
     max-width: 30%;
   }
@@ -58,6 +63,12 @@ body {
   color: #e38826;
 }
 @media (min-width: 1440px) {
+  .wrapper .item-top .item-link:hover {
+    background: #e38826;
+    color: #fff;
+  }
+}
+@media (min-width: 1440px) {
   .wrapper .item-top {
     border-radius: 1rem 0 0 1rem;
   }
@@ -68,12 +79,24 @@ body {
 .wrapper .item-middle .item-link {
   color: #006970;
 }
+@media (min-width: 1440px) {
+  .wrapper .item-middle .item-link:hover {
+    background: #006970;
+    color: #fff;
+  }
+}
 .wrapper .item-bottom {
   background: #004241;
   border-radius: 0 0 1rem 1rem;
 }
 .wrapper .item-bottom .item-link {
   color: #004241;
+}
+@media (min-width: 1440px) {
+  .wrapper .item-bottom .item-link:hover {
+    background: #004241;
+    color: #fff;
+  }
 }
 @media (min-width: 1440px) {
   .wrapper .item-bottom {
@@ -88,6 +111,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
+    align-items: end;
   }
 }
 
