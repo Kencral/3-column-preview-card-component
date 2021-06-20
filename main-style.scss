@@ -4,6 +4,10 @@
     a { 
         color: hsl(228, 45%, 44%); 
     }
+    @media (min-width: 1440px) {
+        width: 100vw;
+        align-self: flex-end;
+    }
 }
 * {
         box-sizing: border-box;
@@ -21,6 +25,8 @@ body {
         .item {
                 padding: 2.5rem;
                 background: #aaa;
+                max-width: 22rem;
+                max-height: 32rem;
                 .item-info {
                         color: hsla(0, 0%, 100%, 0.75);
                 }
@@ -30,6 +36,10 @@ body {
                         background:hsl(0, 0%, 95%);
                         border-radius: 1.5rem;
                         text-decoration:none;
+                        vertical-align: middle;
+                }
+                @media (min-width: 1440px) {
+                    max-width: 30%;
                 }
         } 
         .item-top {
@@ -37,6 +47,9 @@ body {
                 border-radius: 1rem 1rem 0 0;
                 .item-link {
                         color: hsl(31, 77%, 52%);
+                }
+                @media (min-width: 1440px){
+                    border-radius: 1rem 0 0 1rem; 
                 }
         }
         .item-middle {
@@ -51,5 +64,16 @@ body {
                 .item-link {
                         color: hsl(179, 100%, 13%);
                 }
+                @media (min-width: 1440px){
+                    border-radius: 0 1rem 1rem 0;
+                }
+        }
+        @media (min-width: 1440px){
+            margin-top: 0;
+            margin-bottom: 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100vh;
         }
 }
