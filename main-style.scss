@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -11,6 +13,8 @@
 }
 * {
         box-sizing: border-box;
+        font-family: "Lexand Deca", sans-serif;
+        font-weight: 400;
 }
 body {
         margin: 0; 
@@ -27,8 +31,16 @@ body {
                 background: #aaa;
                 max-width: 22rem;
                 max-height: 32rem;
+                .item-title {
+                    font-family: "Big Shoulders Display", cursive;
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    font-weight: 700;
+                }
                 .item-info {
                         color: hsla(0, 0%, 100%, 0.75);
+                        font-size:15px;
+                        line-height: 1.8;
                 }
                 .item-link {
                         display:inline-block;
@@ -39,11 +51,12 @@ body {
                         vertical-align: middle;
                         @media (min-width: 1440px) {
                             border: 2px solid hsl(0, 0%, 95%);
-                            height: 34%;
+                            margin-top: 6rem;
                         }
                 }
                 @media (min-width: 1440px) {
-                    max-width: 30%;
+                    height: 45rem;
+                    width: 19.2rem;
                 }
         } 
         .item-top {
